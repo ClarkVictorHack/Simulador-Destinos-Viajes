@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#063b55"><meta name="description" content="Simulador académico de atención al cliente de Coltur Portoviejo.">
+  <title>Simulador de Atención al Cliente — Coltur Portoviejo</title>
+  <link rel="icon" href="assets/logo/coltur.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#inicio"><img src="assets/logo/coltur.svg" alt="" width="38" height="38"><span>COLTUR<small>PORTOVIEJO</small></span></a>
+    <p class="tagline">Más que viajes, experiencias</p>
+    <div class="nav-label">ESPACIO DE APRENDIZAJE</div>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio" data-route="inicio"><i data-lucide="layout-dashboard"></i>Inicio</a>
+      <a href="#escenarios" data-route="escenarios"><i data-lucide="compass"></i>Escenarios</a>
+      <a href="#simulacion" data-route="simulacion"><i data-lucide="messages-square"></i>Simulación</a>
+      <a href="#evaluacion" data-route="evaluacion"><i data-lucide="chart-no-axes-combined"></i>Evaluación</a>
+      <a href="#reportes" data-route="reportes"><i data-lucide="files"></i>Reportes</a>
+      <a href="#configuracion" data-route="configuracion"><i data-lucide="settings-2"></i>Configuración</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="live-dot"></span> Entorno de práctica local<p>Aprende haciendo.<br>Cada atención cuenta.</p><small>COLTUR · SIMULADOR ACADÉMICO</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="row"><button id="menu-toggle" class="icon-button mobile-only" aria-label="Abrir menú" aria-expanded="false">☰</button><span>Formación / <strong id="route-label">Inicio</strong></span></div><div class="row"><span class="badge subtle" id="mode-label">Modo práctica</span><span class="avatar">A</span><span class="user-label">Asesor en formación</span></div></header>
+    <main id="main" tabindex="-1"><div class="empty"><h1>Preparando tu espacio…</h1><p>Estamos cargando el escenario local.</p></div></main>
+    <footer>Simulador de Atención al Cliente — Coltur Portoviejo <span>Práctica académica · Sin reservas reales</span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

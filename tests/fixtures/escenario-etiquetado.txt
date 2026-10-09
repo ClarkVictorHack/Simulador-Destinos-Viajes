@@ -1,0 +1,11 @@
+Título: Consulta de viaje local
+Destino: Cuenca
+Fechas: 10–12 de octubre
+Pasajeros: 2
+Presupuesto: USD 400 por persona
+Servicios: Hospedaje, Tours
+Recepción
+Empleado: Buenas tardes. ¿Cómo puedo ayudarle?
+Cliente: Deseamos conocer opciones para un viaje.
+Reserva
+Empleado: Revisaremos primero las condiciones del proveedor.

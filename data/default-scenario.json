@@ -1,0 +1,45 @@
+{
+  "id": "centroamerica-panama-001",
+  "title": "Destino Centroamérica — Panamá Familiar",
+  "publicTitle": "Destino Centroamérica",
+  "subtitle": "Atención presencial",
+  "difficulty": "Intermedio",
+  "duration": "15–20 minutos",
+  "context": "Una familia consulta opciones para viajar a Centroamérica.",
+  "objective": "Atender de manera personalizada a un cliente que desea realizar un viaje internacional, identificar correctamente sus necesidades y recomendar una alternativa adecuada.",
+  "metadata": {"source": "Guion dramatizado - destino Centroamérica 30-07-2025.docx", "academic": true, "reviewed": true},
+  "characters": {"advisor": "Angélica Navarro", "client": "Cliente presencial", "phone": "Cliente telefónico"},
+  "hiddenClientProfile": {
+    "tripType": "Internacional", "destination": "Panamá", "dates": "5–12 de agosto", "startDate": "5 de agosto", "endDate": "12 de agosto",
+    "travelers": {"total": 4, "adults": 2, "children": 2}, "purpose": "Turismo", "budget": {"maxPerPerson": 1500, "currency": "USD"},
+    "requestedServices": ["Hospedaje", "Tours", "Traslados internos", "Alimentación"], "wantsAllInclusive": true,
+    "accessibility": {"hasSpecialNeed": true, "person": "Hijo", "age": 10, "condition": "Autismo", "supervision": "Siempre acompañado por sus padres", "avoid": ["Ruidos fuertes", "Ambientes demasiado estimulantes", "Cambios bruscos de ambiente"]},
+    "pet": {"travelsWithPet": true, "species": "Perro", "size": null, "weight": null}
+  },
+  "opening": "Buenas tardes. Estoy buscando opciones para un viaje familiar durante las vacaciones de agosto.",
+  "packages": [
+    {"id":"explora","name":"Explora Tranquilo","category":"Básica · Flexibilidad y tranquilidad","accommodation":"Hotel 3 estrellas en zona tranquila, habitaciones familiares","meals":"Desayuno incluido","transport":"Traslados internos cómodos","assistance":"Opciones con asistencia personalizada","flights":"Vuelos ida y vuelta a Panamá","initialActivities":["Parque Natural Metropolitano","Mariposario de Gamboa","Tiempo libre para descanso familiar"],"laterTourAnswer":[],"price":null,"duration":null,"traits":["quiet","budget","flexible"]},
+    {"id":"descubre","name":"Descubre Panamá","category":"Intermedia · Equilibrio e inclusión","accommodation":"Hotel 4 estrellas, área de juegos tranquila y piscina familiar","meals":"Desayuno y almuerzo; menú adaptado","transport":"Traslados internos cómodos","assistance":"Guía privada en el Canal, actividades adaptadas","flights":"Vuelos ida y vuelta","initialActivities":["Canal de Panamá con guía privada en horario de baja afluencia","Paseo en barco por el Lago Gatún","Taller de arte sensorial","Jardín botánico o parque ecológico"],"laterTourAnswer":[],"price":null,"duration":null,"traits":["adapted","comfort","balance"]},
+    {"id":"relax","name":"Relájate y Conecta","category":"Todo incluido + asistencia","accommodation":"Hotel 5 estrellas con atención personalizada","meals":"Alimentación completa; menú suave y adaptado","transport":"Traslados privados","assistance":"Guía acompañante para la familia en todo momento","flights":"Vuelos","initialActivities":["Resort ecológico con actividades sensoriales y recreativas","Casco Antiguo en horario especial","Mini taller de cerámica con guía experta en niños con TEA"],"laterTourAnswer":["Canal de Panamá","Casco Antiguo","Isla Taboga","Parque Nacional Soberanía"],"price":null,"duration":null,"traits":["comfort","assistance","private","fullMeals","adapted"]}
+  ],
+  "aliases": {"Premium":"Relájate y Conecta"},
+  "clientPreferredPackage": "relax",
+  "questions": [
+    {"id":"tours","intent":"explain_package","text":"Me interesa más el paquete Relájate y Conecta. ¿Qué tours incluye?","answer":"Canal de Panamá, Casco Antiguo, Isla Taboga y Parque Nacional Soberanía.","checks":["canal","casco","taboga","soberania"]},
+    {"id":"passport","intent":"answer_passport","text":"¿Es necesario pasaporte para viajar?","answer":"Pasaporte con al menos 6 meses de vigencia.","checks":["pasaporte","6|seis","mes"]},
+    {"id":"vaccine","intent":"answer_vaccine","text":"¿Hay alguna vacuna obligatoria?","answer":"El guion indica vacuna contra la fiebre amarilla para viajeros procedentes de zonas endémicas.","checks":["fiebre amarilla","endemica"]},
+    {"id":"disabilityDocuments","intent":"answer_disability_documents","text":"¿Qué documentación necesita mi hijo?","answer":"Carné vigente o cédula con la indicación correspondiente. Menores de 12 años con carné CONADIS: un solo descuento por niñez o discapacidad, no ambos.","checks":["carne|cedula","vigente|indicacion"]},
+    {"id":"petDocuments","intent":"answer_pet_documents","text":"¿Qué necesito para viajar con mi mascota?","answer":"Certificado veterinario de salud emitido dentro de los 10 días previos al viaje; vacuna antirrábica al menos 21 días antes; permiso de exportación de AGROCALIDAD. El peso permitido debe consultarse con la aerolínea.","checks":["certificado","10|diez","rabia|antirrabica","21|veintiun","agrocalidad"]},
+    {"id":"airport","intent":"answer_airport_arrival","text":"¿Con cuánta anticipación debemos llegar al aeropuerto?","answer":"Al menos tres horas antes del vuelo. Llevar pasaportes, carné de vacunas y permisos de salida de la mascota.","checks":["3|tres","hora"]},
+    {"id":"deadline","intent":"explain_deadline","text":"¿Hasta cuándo puedo confirmar la reserva?","answer":"Tarifas sujetas a disponibilidad. Se recomienda reservar en los próximos 2 días. Una vez bloqueados los espacios, el plazo máximo para pagar es 48 horas.","checks":["disponibilidad","2|dos","48|cuarenta y ocho"]}
+  ],
+  "reservationRules": {"paymentHours":48,"bookingAdvice":"Reservar en los próximos 2 días; tarifas sujetas a disponibilidad.","payment":"La reserva bloquea espacios; el pago aún no está confirmado. Pago con tarjeta, transferencia o efectivo. El diferimiento con tarjeta puede tener recargos.","cancellation":"Con más de 15 días de anticipación: reembolso completo según el guion. Con menos anticipación: cargos del proveedor. El guion no precisa la condición para exactamente 15 días.","verification":"Confirmar nombres, fechas y destino antes de emitir. Entregar comprobantes y vouchers para revisión, físicamente y por correo. El guion indica que posteriormente no se aceptan reclamos."},
+  "followUp": "Enviar información por correo y WhatsApp, consejos antes del viaje, resolver dudas y programar seguimiento posterior al viaje.",
+  "interruptions": [{"id":"incoming-call","triggerProgress":65,"expected":"callback","question":"Un cliente intenta comunicarse. ¿Qué deseas hacer?"}],
+  "callbackAnswer": "Según el guion: para la visa Schengen, pasaporte con al menos 6 meses de validez, formulario, fotografía reciente, reservas de vuelos y alojamiento, seguro de viaje con cobertura mínima de 30.000 euros, solvencia económica y carta de motivos. Agendar cita en el consulado o centro de visado del país al que viajará primero o donde permanecerá más tiempo. Se ofrece enviar la guía por correo, sin efectuar un envío real.",
+  "conversationRules": [],
+  "evaluationRules": [],
+  "rubric": {"greeting":10,"needsDetection":20,"inclusion":15,"recommendation":15,"documentation":10,"objectionHandling":5,"reservationClosing":10,"interruptionHandling":5,"followUp":10},
+  "penalties": {"noBudget":-5,"ignoredAccessibility":-10,"incompatibleRecommendation":-10,"ignoredPet":-5,"badPhoneHandling":-5,"incompleteReservation":-5},
+  "notes": ["Los tours de la presentación inicial y la respuesta posterior se conservan por separado.","Premium es un alias de Relájate y Conecta; no es un cuarto paquete.","No se especifican precios, peso o tamaño de la mascota.","La llamada se activa tras explicar la propuesta o al 65 % por la secuencia solicitada para el simulador."]
+}
